@@ -95,5 +95,7 @@ st.title('Dashboard')
 st.dataframe(df, use_container_width=True)
 
 
+st.write(df)
+
 
 print("Planilha final criada com sucesso!")
