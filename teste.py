@@ -92,8 +92,9 @@ resultado.to_csv('planilha_final.csv')
 
 df=pd.read_excel('planilha_final.xlsx')
 
-st.dataframe(df)
 st.title('Dashboard')
+st.dataframe(df)
+
 
 
 print("Planilha final criada com sucesso!")
