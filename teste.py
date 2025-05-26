@@ -96,7 +96,7 @@ resultado.to_csv('planilha_final.csv')
 df=pd.read_excel('planilha_final.xlsx')
 df_csv =pd.read_csv('planilha_final.csv')
 
-st.dataframe(df_csv)
+st.dataframe(df)
 
 
 print("Planilha final criada com sucesso!")
