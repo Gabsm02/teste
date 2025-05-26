@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Carrega a planilha
-arquivo = "Dashboard Executivo Celldowntime.xlsx"
+arquivo = "Dashboard Executivo Celldowntime .xlsx"
 df = pd.read_excel(arquivo, engine='openpyxl')
 
 # Aplica filtro: mantém apenas registros com UF = "BA"
