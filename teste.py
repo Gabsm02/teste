@@ -55,7 +55,7 @@ planilha_final = planilha_final[nova_ordem]
 planilha_final.to_excel('planilha_atualizada.xlsx', index=False)
 
 # Carrega os dados da planilha de backlog
-backlog = pd.read_excel("Backlog_detalhes.xlsx", engine="openpyxl")
+backlog = pd.read_excel("Backlog_Detalhes.xlsx", engine="openpyxl")
 
 # Seleciona apenas as colunas desejadas
 colunas_desejadas = ["EVENTO", "UF", "Ação", "Prazo", "Status", "Fabricante", "Modelo", "Cod_Modelo", "SS", "Afetação"]
