@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-
-st.title('Hello world ')
-
 # Carrega a planilha
 arquivo = "Dashboard Executivo Celldowntime.xlsx"
 df = pd.read_excel(arquivo, engine='openpyxl')
@@ -94,9 +91,9 @@ resultado.to_excel("planilha_final.xlsx", index=False)
 resultado.to_csv('planilha_final.csv')
 
 df=pd.read_excel('planilha_final.xlsx')
-df_csv =pd.read_csv('planilha_final.csv')
 
 st.dataframe(df)
+st.title('Dashboard')
 
 
 print("Planilha final criada com sucesso!")
