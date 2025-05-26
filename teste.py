@@ -90,9 +90,12 @@ if "GESTOR ATUAL" in resultado.columns and "Status" in resultado.columns:
 
 # Salva o resultado em uma nova planilha
 resultado.to_excel("planilha_final.xlsx", index=False)
+resultado.to_csv('planilha_final.csv')
 
 df=pd.read_excel('planilha_final.xlsx')
+df_csv =pd.read_csv('planilha_final.csv')
 
-st.dataframe(df)
+st.dataframe(df_csv)
+
 
 print("Planilha final criada com sucesso!")
