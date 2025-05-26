@@ -88,7 +88,6 @@ if "GESTOR ATUAL" in resultado.columns and "Status" in resultado.columns:
 
 # Salva o resultado em uma nova planilha
 resultado.to_excel("planilha_final.xlsx", index=False)
-resultado.to_csv('planilha_final.csv')
 
 df=pd.read_excel('planilha_final.xlsx')
 
