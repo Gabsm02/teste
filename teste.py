@@ -93,7 +93,7 @@ resultado.to_csv('planilha_final.csv')
 df=pd.read_excel('planilha_final.xlsx')
 
 st.title('Dashboard')
-st.dataframe(df)
+st.dataframe(df, use_container_width=True)
 
 
 
