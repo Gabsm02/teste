@@ -93,7 +93,7 @@ df=pd.read_excel('planilha_final.xlsx')
 
 
 df.index = df.index + 1
-st.write(f"Total de registros lidos: {df.shape[0]}")
+st.write(f"Total de registros lido: {df.shape[0]}")
 st.title('Dashboard')
 st.dataframe(df, use_container_width=True)
 
